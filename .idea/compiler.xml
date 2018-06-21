@@ -9,5 +9,8 @@
         <module name="pullenti" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pullenti" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

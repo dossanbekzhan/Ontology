@@ -6,6 +6,7 @@ import com.squareup.okhttp.Response;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Scrap/c.txt");
+        ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/c.txt");
 
         scrapWithOKHTTP(list);
 
@@ -32,7 +33,7 @@ public class Main {
         authUsers.add(new ProxyAuthenticator("MamY0H", "kSxe70", "146.185.198.67", "8000"));
         authUsers.add(new ProxyAuthenticator("P28Lso", "paFWBP", "91.243.55.125", "8000"));
 
-        Writer writer1 = new FileWriter("/home/beka/IdeaProjects/Scrap/b.txt", true);
+        Writer writer1 = new FileWriter("/home/beka/IdeaProjects/Ontology/b.txt", true);
 
 
         Authenticator.setDefault(new ProxyAuthenticator("P28Lso", "paFWBP", "91.243.55.125", "8000"));
@@ -85,8 +86,6 @@ public class Main {
                 System.out.println("--------------------------------------");
                 System.out.println("switched to next proxy");
                 break;
-
-
             }
         }
 

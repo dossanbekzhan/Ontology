@@ -21,7 +21,7 @@ public class Utils {
         System.out.println(lines.size());
         reader.close();
 
-       // List<String> personsSorted = lines.stream().collect(Collectors.toList());
+        // List<String> personsSorted = lines.stream().collect(Collectors.toList());
         List<String> personsSorted = new ArrayList<>(lines);
         Collections.sort(personsSorted);
 
@@ -131,6 +131,18 @@ public class Utils {
         writer.close();
 
         br.close();
+    }
+
+    public static void replaceWord(String fileName, String target, String replacement, String fileWrite) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(fileWrite, true));
+        String line;
+
+        while ((line = reader.readLine()) != null) {
+
+            String newline = line.replace(target, replacement);
+            writer.write(newline);
+        }
 
 
     }

@@ -1,8 +1,14 @@
 package demo;
 
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import java.io.*;
 import java.util.*;
-import java.util.stream.Collectors;
+
 
 /**
  * Created by beka on 6/21/18.
@@ -143,7 +149,97 @@ public class Utils {
             String newline = line.replace(target, replacement);
             writer.write(newline);
         }
+    }
 
+    public static void listFilesForFolder(final File folder) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (final File fileEntry : folder.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                listFilesForFolder(fileEntry);
+            } else {
+                //   System.out.println(fileEntry.getName());
+                stringBuilder.append(readFile(folder.toPath() + "/" + fileEntry.getName()));
+                stringBuilder.append("\n");
+
+            }
+            fileWrite(stringBuilder.toString(), folder.toPath() + "/" + "fullData.txt");
+
+        }
+    }
+
+    private static void fileWrite(String text, String fileName) {
+        File file = new File(fileName);
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+            writer.write(text);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static String readFile(String fileName) {
+        String fullText = "";
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+
+            while (line != null) {
+                sb.append(line);
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+            }
+            fullText = sb.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return fullText;
+    }
+
+    public static Map<String, String> getURLArticles() throws IOException {
+        Map<String, String> articles = new HashMap<>();
+
+        for (int i = 1; i <= 54; i++) {
+            String tempURL = Constants.URLWEBMEDINFO + "/article/page/" + i;
+            Connection connection = Jsoup.connect(tempURL).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
+            Document document = connection.timeout(10000).get();
+            document.select("span.entry-category-nn").remove();
+            document.select("nav.loop-pagination").remove();
+
+            Elements main = document.select("main#recent-content-1");
+
+            Elements links = main.select("a[href]");
+
+            for (Element link : links) {
+                if (!link.text().isEmpty()) {
+                    System.out.println("Text: " + link.text());
+                    System.out.println("Href: " + link.attr("href"));
+                    articles.put(link.text(), link.attr("href"));
+                }
+            }
+        }
+
+        return articles;
+    }
+
+    public static String getURLContext(String url) throws IOException {
+        StringBuilder builder = new StringBuilder();
+
+        Connection connection = Jsoup.connect(url).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
+        Document document = connection.timeout(10000).get();
+
+        Element context = document.select("div.entry-content").first();
+
+        builder.append(context.text());
+
+        return builder.toString();
+    }
+
+    public static void writeFile(String nameFile, String context) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/beka/Рабочий стол/BD/" + nameFile + ".txt"));
+
+        writer.write(context);
+        writer.flush();
+        writer.close();
 
     }
 }

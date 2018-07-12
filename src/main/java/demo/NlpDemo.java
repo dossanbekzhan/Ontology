@@ -15,12 +15,12 @@ public class NlpDemo {
         writer.flush();
         writer.close();*/
 
-        Map<String, String> maps = Utils.getURLArticles();
-        for (Map.Entry<String, String> entry : maps.entrySet()) {
-            String context = Utils.getURLContext(entry.getValue());
-            String nameArticle = entry.getKey();
-            Utils.writeFile(nameArticle, context);
-        }
+
+       // Utils.getAttrInBigClaster(Utils.getElements("/home/beka/Документы/words_clusters_k7.txt"), "/home/beka/Рабочий стол/aaa/cluster/a.txt");
+        //Utils.listFilesForFolder(new File("/home/beka/Рабочий стол/DB/"));
+        Utils.stripDuplicatesFromFile("/home/beka/Рабочий стол/mini.txt","/home/beka/Рабочий стол/mini2.txt");
+
+       // Utils.getAttrInBigClaster(Utils.getElements("/home/beka/Рабочий стол/names2.txt"),"/home/beka/Рабочий стол/aaa/cluster/FirstData2.txt","/home/beka/Рабочий стол/mini.txt");
 
     }
 }

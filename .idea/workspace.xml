@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fadc040b-4ac3-4dea-a6e4-54c1abc94eda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/demo/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/demo/TextAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/a.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/b.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/c.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/demo/Main.java" afterPath="$PROJECT_DIR$/src/main/java/demo/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/demo/NlpDemo.java" afterPath="$PROJECT_DIR$/src/main/java/demo/NlpDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/demo/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/demo/Utils.java" />
     </list>
@@ -18,31 +19,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Ontology" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="NlpDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="253">
+              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#scrapWithOKHTTP#0;class#Main#0" expanded="false" />
+                <element signature="method#readFile#0;class#Main#0" expanded="false" />
+                <element signature="e#3612#3620#0" expanded="true" />
+                <element signature="method#toInteger#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="237" column="94" lean-forward="false" selection-start-line="237" selection-start-column="94" selection-end-line="237" selection-end-column="94" />
+            <state relative-caret-position="23">
+              <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
               <folding>
                 <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-                <element signature="method#getAttrInBigClaster#0;class#Utils#0" expanded="false" />
-                <element signature="method#getElements#0;class#Utils#0" expanded="false" />
-                <element signature="method#writeFile#0;class#Utils#0" expanded="false" />
                 <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
                 <element signature="method#main#0;class#Utils#0" expanded="false" />
                 <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
@@ -51,16 +64,37 @@
                 <element signature="method#readFile#0;class#Utils#0" expanded="false" />
                 <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
                 <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+                <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/Constants.java">
+      <file leaf-file-name="ProxyAuthenticator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="-11">
+              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,6 +109,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>оксиг</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -88,18 +127,19 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/pullenti/n2j/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pullenti/morph/CharsInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/Word2Vec.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/Program.java" />
-        <option value="$PROJECT_DIR$/b.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/Main.java" />
-        <option value="$PROJECT_DIR$/c.txt" />
         <option value="$PROJECT_DIR$/src/main/java/demo/TextAnalyzer.java" />
         <option value="$PROJECT_DIR$/target/a.txt" />
         <option value="$PROJECT_DIR$/src/main/java/demo/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/Utils.java" />
+        <option value="$PROJECT_DIR$/c.txt" />
         <option value="$PROJECT_DIR$/src/main/java/demo/NlpDemo.java" />
+        <option value="$PROJECT_DIR$/b.txt" />
+        <option value="$PROJECT_DIR$/Data.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/Main.java" />
       </list>
     </option>
   </component>
@@ -108,6 +148,34 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="pullenti" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="pullenti" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="69" />
@@ -131,8 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -196,6 +262,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -206,15 +274,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pullenti" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/demo" />
-      <recent name="C:\Users\Admin\IdeaProjects\pullenti\src\main\java" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/demo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/demo" />
+      <recent name="C:\Users\Admin\IdeaProjects\pullenti\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -229,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NlpDemo">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -535,9 +604,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.NlpDemo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Program" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.NlpDemo" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Program" />
       </list>
     </recent_temporary>
   </component>
@@ -564,11 +633,23 @@
       <workItem from="1530423102069" duration="53000" />
       <workItem from="1530467740939" duration="1454000" />
       <workItem from="1530874379508" duration="8100000" />
+      <workItem from="1531313967067" duration="4719000" />
+      <workItem from="1531378981668" duration="8347000" />
+      <workItem from="1531400653355" duration="8913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36577000" />
+    <option name="totallyTimeSpent" value="58880000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="-5" width="1851" height="1085" extended-state="6" />
@@ -581,10 +662,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6043956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7087912" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.56153846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2884293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35069445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -633,7 +714,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -642,11 +723,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/TextAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -654,7 +734,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+          <folding>
+            <element signature="method#scrapWithOKHTTP#0;class#Main#0" expanded="false" />
+            <element signature="method#readFile#0;class#Main#0" expanded="false" />
+            <element signature="e#3612#3620#0" expanded="true" />
+            <element signature="method#toInteger#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemmatizator.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
+            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
+            <element signature="method#main#0;class#Utils#0" expanded="false" />
+            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
+            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
+            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
+            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
+            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/a.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -664,9 +818,6 @@
           <caret line="188" column="20" lean-forward="false" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getAttrInBigClaster#0;class#Utils#0" expanded="false" />
-            <element signature="method#getElements#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
             <element signature="method#main#0;class#Utils#0" expanded="false" />
             <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
@@ -675,6 +826,7 @@
             <element signature="method#readFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,7 +835,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -693,9 +847,6 @@
           <caret line="158" column="58" lean-forward="true" selection-start-line="158" selection-start-column="58" selection-end-line="158" selection-end-column="58" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getAttrInBigClaster#0;class#Utils#0" expanded="false" />
-            <element signature="method#getElements#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
             <element signature="method#main#0;class#Utils#0" expanded="false" />
             <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
@@ -704,6 +855,7 @@
             <element signature="method#readFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,7 +864,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="16" column="85" lean-forward="false" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -729,9 +883,6 @@
           <caret line="157" column="5" lean-forward="false" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getAttrInBigClaster#0;class#Utils#0" expanded="false" />
-            <element signature="method#getElements#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
             <element signature="method#main#0;class#Utils#0" expanded="false" />
             <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
@@ -740,6 +891,7 @@
             <element signature="method#readFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -748,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
           <caret line="79" column="52" lean-forward="false" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +907,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="16" column="85" lean-forward="false" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -764,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
           <caret line="79" column="52" lean-forward="true" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,9 +933,6 @@
           <caret line="157" column="5" lean-forward="false" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getAttrInBigClaster#0;class#Utils#0" expanded="false" />
-            <element signature="method#getElements#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
             <element signature="method#main#0;class#Utils#0" expanded="false" />
             <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
@@ -792,6 +941,7 @@
             <element signature="method#readFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -807,7 +957,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="85" lean-forward="false" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -824,9 +976,6 @@
           <caret line="157" column="5" lean-forward="true" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getAttrInBigClaster#0;class#Utils#0" expanded="false" />
-            <element signature="method#getElements#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
             <element signature="method#main#0;class#Utils#0" expanded="false" />
             <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
@@ -835,6 +984,7 @@
             <element signature="method#readFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -843,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,9 +1009,6 @@
           <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getAttrInBigClaster#0;class#Utils#0" expanded="false" />
-            <element signature="method#getElements#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
             <element signature="method#main#0;class#Utils#0" expanded="false" />
             <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
@@ -871,6 +1017,7 @@
             <element signature="method#readFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -879,7 +1026,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -890,25 +1039,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/c.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -927,20 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/b.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pullenti/ner/MetaToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -952,7 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
           <caret line="79" column="52" lean-forward="false" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,52 +1087,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemmatizator.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-148910">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lemmatizator.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firstData.txt" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/net/Authenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="64" column="34" lean-forward="true" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="237" column="94" lean-forward="false" selection-start-line="237" selection-start-column="94" selection-end-line="237" selection-end-column="94" />
+        <state relative-caret-position="23">
+          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getAttrInBigClaster#0;class#Utils#0" expanded="false" />
-            <element signature="method#getElements#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
             <element signature="method#main#0;class#Utils#0" expanded="false" />
             <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
@@ -1021,6 +1164,20 @@
             <element signature="method#readFile#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
             <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="method#scrapWithOKHTTP#0;class#Main#0" expanded="false" />
+            <element signature="method#readFile#0;class#Main#0" expanded="false" />
+            <element signature="e#3612#3620#0" expanded="true" />
+            <element signature="method#toInteger#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>

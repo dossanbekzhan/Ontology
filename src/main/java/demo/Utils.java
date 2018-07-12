@@ -40,9 +40,9 @@ public class Utils {
     }
 
 
-    public static void getAttrInBigClaster(List<String> attr, String filename) throws IOException {
+    public static void getAttrInBigClaster(List<String> attr, String filename, String newFileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
-        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/beka/Рабочий стол/aaaaaa.txt", true));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(newFileName, true));
         String line;
 
         while ((line = reader.readLine()) != null) {
@@ -194,6 +194,8 @@ public class Utils {
 
         return fullText;
     }
+
+
 
     public static Map<String, String> getURLArticles() throws IOException {
         Map<String, String> articles = new HashMap<>();

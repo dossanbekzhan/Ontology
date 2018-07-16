@@ -3,10 +3,6 @@ package demo;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
-import com.sun.net.httpserver.HttpsServer;
-import org.apache.http.HttpHost;
-import org.apache.http.conn.params.ConnRoutePNames;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -27,7 +23,7 @@ public class Main {
         ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/Data.txt");
 
         scrapWithOKHTTP(list);
-       // scrap();
+
     }
 
 
@@ -35,10 +31,18 @@ public class Main {
 
         Writer writer1 = new FileWriter("/home/beka/IdeaProjects/Ontology/b.txt", true);
 
-        // Authenticator.setDefault(new ProxyAuthenticator("RUS256954", "1834561", "188.68.1.149", "8080"));
+        // Authenticator.setDefault(new ProxyAuthenticator("y1L78K", "3mqyK2", "188.68.1.149", "8080"));
 
-        System.setProperty("http.proxyHost", "188.68.1.149");
-        System.setProperty("http.proxyPort", "8085");
+        // Authenticator.setDefault(new ProxyAuthenticator());
+        //Authenticator.setDefault(new ProxyAuthenticator("TTLJWf", "ABH3u7", "185.223.212.237", "8000"));
+        // Authenticator.setDefault(new ProxyAuthenticator( "TTLJWf","ABH3u7","185.223.213.175", "8000"));
+        // Authenticator.setDefault(new ProxyAuthenticator( "TTLJWf","ABH3u7","185.223.213.168", "8000"));
+        //  Authenticator.setDefault(new ProxyAuthenticator( "TTLJWf","ABH3u7","185.223.212.205", "8000"));
+        // Authenticator.setDefault(new ProxyAuthenticator( "TTLJWf","ABH3u7","185.223.215.79", "8000"));
+        //  Authenticator.setDefault(new ProxyAuthenticator( "TTLJWf","ABH3u7","185.223.212.253", "8000"));
+        //  Authenticator.setDefault(new ProxyAuthenticator( "TTLJWf","ABH3u7","185.223.212.199", "8000"));
+        //  Authenticator.setDefault(new ProxyAuthenticator( "TTLJWf","ABH3u7","185.128.215.204", "8000"));
+
 
         for (String phrase : phraseList) {
             String tempURL = GOOGLEURL + "\"" + phrase + "\"";
@@ -86,15 +90,15 @@ public class Main {
                 }
             } else {
                 System.out.println("--------------------------------------");
-                System.out.println("switched to next proxy");
                 Document document = Jsoup.parse(response.body().string());
                 System.out.println(document);
+
                 break;
             }
-            writer1.flush();
-            writer1.close();
 
         }
+        writer1.flush();
+        writer1.close();
 
 
     }
@@ -136,24 +140,6 @@ public class Main {
 
     }
 
-
-    public static void scrap() {
-        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("146.185.200.218", 1080));
-        Request request = new Request.Builder()
-                .get()
-                .url("http://www.google.ru/search?q=болезнь+рак")
-                .build();
-
-        OkHttpClient okHttpClient = new OkHttpClient();
-        okHttpClient.setProxy(proxy);
-
-        try {
-            Response response = okHttpClient.newCall(request).execute();
-            System.out.println(response.body().string());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
 }
 

@@ -18,10 +18,18 @@ public class ProxyAuthenticator extends Authenticator {
         System.setProperty("http.proxyHost", host);
         System.setProperty("http.proxyPort", port);
     }
-    public ProxyAuthenticator(){
+
+    public ProxyAuthenticator() {
         this.user = "TTLJWf";
         this.password = "ABH3u7";
         System.setProperty("http.proxyHost", "185.223.215.95");
+        System.setProperty("http.proxyPort", "8000");
+    }
+
+    public ProxyAuthenticator(String host) {
+        this.user = "TTLJWf";
+        this.password = "ABH3u7";
+        System.setProperty("http.proxyHost", host);
         System.setProperty("http.proxyPort", "8000");
     }
 

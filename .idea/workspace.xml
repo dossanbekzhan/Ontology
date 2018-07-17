@@ -32,26 +32,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="288">
+              <caret line="48" column="73" lean-forward="false" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
               <folding>
-                <element signature="method#readFile#0;class#Main#0" expanded="false" />
-                <element signature="e#4144#4152#0" expanded="true" />
-                <element signature="method#toInteger#0;class#Main#0" expanded="false" />
+                <element signature="e#4046#4054#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="45" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -59,8 +47,18 @@
       <file leaf-file-name="ProxyAuthenticator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            <state relative-caret-position="598">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -69,18 +67,8 @@
       <file leaf-file-name="b.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="105" column="10" lean-forward="false" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="3404">
+              <caret line="148" column="12" lean-forward="false" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -123,9 +111,9 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/NlpDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/Main.java" />
         <option value="$PROJECT_DIR$/b.txt" />
         <option value="$PROJECT_DIR$/Data.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/Main.java" />
       </list>
     </option>
   </component>
@@ -164,14 +152,14 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="68" />
+    <option name="x" value="69" />
     <option name="y" value="-5" />
-    <option name="width" value="1853" />
-    <option name="height" value="1086" />
+    <option name="width" value="1851" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -185,6 +173,71 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -563,11 +616,12 @@
       <workItem from="1531658783511" duration="1665000" />
       <workItem from="1531760528330" duration="4708000" />
       <workItem from="1531771978616" duration="800000" />
+      <workItem from="1531812528701" duration="148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70834000" />
+    <option name="totallyTimeSpent" value="76055000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -579,7 +633,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="-5" width="1853" height="1086" extended-state="6" />
+    <frame x="69" y="-5" width="1851" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -588,8 +642,8 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36483517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6043956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36483517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32785088" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35047513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -597,8 +651,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -669,9 +723,7 @@
         <state relative-caret-position="946">
           <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
           <folding>
-            <element signature="method#readFile#0;class#Main#0" expanded="false" />
-            <element signature="e#4144#4152#0" expanded="true" />
-            <element signature="method#toInteger#0;class#Main#0" expanded="false" />
+            <element signature="e#4046#4054#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -704,15 +756,6 @@
           <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
-            <element signature="method#main#0;class#Utils#0" expanded="false" />
-            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
-            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
-            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
-            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -737,15 +780,6 @@
           <caret line="188" column="20" lean-forward="false" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
-            <element signature="method#main#0;class#Utils#0" expanded="false" />
-            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
-            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
-            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
-            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -763,15 +797,6 @@
           <caret line="158" column="58" lean-forward="true" selection-start-line="158" selection-start-column="58" selection-end-line="158" selection-end-column="58" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
-            <element signature="method#main#0;class#Utils#0" expanded="false" />
-            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
-            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
-            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
-            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -796,15 +821,6 @@
           <caret line="157" column="5" lean-forward="false" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
-            <element signature="method#main#0;class#Utils#0" expanded="false" />
-            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
-            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
-            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
-            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -843,15 +859,6 @@
           <caret line="157" column="5" lean-forward="false" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
-            <element signature="method#main#0;class#Utils#0" expanded="false" />
-            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
-            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
-            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
-            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,15 +890,6 @@
           <caret line="157" column="5" lean-forward="true" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
-            <element signature="method#main#0;class#Utils#0" expanded="false" />
-            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
-            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
-            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
-            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -916,15 +914,6 @@
           <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
-            <element signature="method#main#0;class#Utils#0" expanded="false" />
-            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
-            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
-            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
-            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1018,25 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
-          <folding>
-            <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getFreq#0;class#Utils#0" expanded="false" />
-            <element signature="method#main#0;class#Utils#0" expanded="false" />
-            <element signature="method#replaceWord#0;class#Utils#0" expanded="false" />
-            <element signature="method#listFilesForFolder#0;class#Utils#0" expanded="false" />
-            <element signature="method#fileWrite#0;class#Utils#0" expanded="false" />
-            <element signature="method#readFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLArticles#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
-            <element signature="method#writeFile#1;class#Utils#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -1045,39 +1015,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="23">
+          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
           <folding>
-            <element signature="method#readFile#0;class#Main#0" expanded="false" />
-            <element signature="e#4144#4152#0" expanded="true" />
-            <element signature="method#toInteger#0;class#Main#0" expanded="false" />
+            <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/b.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="105" column="10" lean-forward="false" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
+        <state relative-caret-position="3404">
+          <caret line="148" column="12" lean-forward="false" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="207">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="48" column="73" lean-forward="false" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+          <folding>
+            <element signature="e#4046#4054#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

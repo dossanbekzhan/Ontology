@@ -16,21 +16,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
-    private static final String GOOGLEURL = "http://www.google.ru/search?q=";
+    private static final String GOOGLEURL = "http://www.google.com/search?q=";
     private static ArrayList<String> proxies = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
 
-        proxies.add("185.223.213.168");
-        proxies.add("185.223.212.205");
-        proxies.add("185.223.215.79");
-        proxies.add("185.223.212.253");
-        proxies.add("185.223.212.199");
-        proxies.add("185.128.215.204");
-        proxies.add("185.223.213.175");
-        proxies.add("185.223.212.237");
-        // proxies.add(new ProxyAuthenticator("y1L78K", "3mqyK2", "188.68.1.149", "8080"));
-        // proxies.add(new ProxyAuthenticator());
 
         ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/Data.txt");
 
@@ -45,8 +35,15 @@ public class Main {
 
         try {
 
-
-            Authenticator.setDefault(new ProxyAuthenticator(proxies.get(4)));
+            //Authenticator.setDefault(new ProxyAuthenticator("WnxJCW", "YAj43X", "185.249.172.154", "8000"));
+            //Authenticator.setDefault(new ProxyAuthenticator("DsGBCp", "Rxnx98", "91.241.47.196", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("tENEuo", "KuxbR2", "193.93.61.103", "8000"));
+//             Authenticator.setDefault(new ProxyAuthenticator("Dg0uJ1", "1DbFup", "146.185.197.20", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("Dg0uJ1", "1DbFup", "185.225.11.127", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("KpKKrF", "bHnFgD", "37.139.49.33", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("KpKKrF", "bHnFgD", "46.161.29.181", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("DsGBCp", "Rxnx98", "193.93.60.184", "8000"));
+//                 Authenticator.setDefault(new ProxyAuthenticator("y1L78K", "3mqyK2", "185.128.215.204", "8000"));
 
             for (String phrase : phraseList) {
 

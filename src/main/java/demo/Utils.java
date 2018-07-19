@@ -196,26 +196,25 @@ public class Utils {
     }
 
 
-
-    public static Map<String, String> getURLArticles() throws IOException {
+    public static Map<String, String> getURLArticles(ArrayList<String> urls, String select) throws IOException {
         Map<String, String> articles = new HashMap<>();
 
-        for (int i = 1; i <= 54; i++) {
-            String tempURL = Constants.URLWEBMEDINFO + "/article/page/" + i;
+        for (int i = 0; i < urls.size(); i++) {
+
+
+            String tempURL = urls.get(i);
             Connection connection = Jsoup.connect(tempURL).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
             Document document = connection.timeout(10000).get();
-            document.select("span.entry-category-nn").remove();
-            document.select("nav.loop-pagination").remove();
 
-            Elements main = document.select("main#recent-content-1");
+            Elements main = document.select(select);
 
             Elements links = main.select("a[href]");
 
             for (Element link : links) {
                 if (!link.text().isEmpty()) {
-                    System.out.println("Text: " + link.text());
-                    System.out.println("Href: " + link.attr("href"));
-                    articles.put(link.text(), link.attr("href"));
+                    System.out.println("Name Article: " + link.text());
+                    System.out.println("Href: " + Constants.URLWIKI + link.attr("href"));
+                    articles.put(link.text(), Constants.URLWIKI + link.attr("href"));
                 }
             }
         }
@@ -223,19 +222,42 @@ public class Utils {
         return articles;
     }
 
-    public static String getURLContext(String url) throws IOException {
+    /**
+     * @param url    is article's url
+     * @param select is html context
+     *               <p>
+     *               div id is div#
+     *               div class is div.
+     *               <p>
+     *               for remove use method document.select(select).remove()
+     * @return Article's context
+     * @throws IOException
+     */
+    public static String getURLContext(String url, String select, String removeselect) throws IOException {
         StringBuilder builder = new StringBuilder();
 
         Connection connection = Jsoup.connect(url).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
         Document document = connection.timeout(10000).get();
 
-        Element context = document.select("div.entry-content").first();
+        document.select(removeselect).remove();
+        document.select("table.infobox").remove();
+        document.select("div#toctitle").remove();
+        document.select("div.toctitle").remove();
+        document.select("div#toc").remove();
+        document.select("div.toc").remove();
+
+        Element context = document.select(select).first();
 
         builder.append(context.text());
 
         return builder.toString();
     }
 
+    /**
+     * @param nameFile
+     * @param context
+     * @throws IOException
+     */
     public static void writeFile(String nameFile, String context) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter("/home/beka/Рабочий стол/BD/" + nameFile + ".txt"));
 

@@ -5,4 +5,5 @@ package demo;
  */
 public class Constants {
     public static final String URLWEBMEDINFO = "http://www.webmedinfo.ru/";
+    public static final String URLWIKI = "https://ru.wikipedia.org";
 }

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fadc040b-4ac3-4dea-a6e4-54c1abc94eda" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/demo/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/demo/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/demo/NlpDemo.java" afterPath="$PROJECT_DIR$/src/main/java/demo/NlpDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/demo/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/demo/Utils.java" />
+
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,8 +35,10 @@
       <file leaf-file-name="NlpDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+
+            <state relative-caret-position="253">
+              <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +53,10 @@
               <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
                 <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-                <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
+
+                <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+                <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
+
               </folding>
             </state>
           </provider>
@@ -86,14 +95,14 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/Program.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/TextAnalyzer.java" />
         <option value="$PROJECT_DIR$/target/a.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/Constants.java" />
         <option value="$PROJECT_DIR$/c.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/NlpDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/ProxyAuthenticator.java" />
         <option value="$PROJECT_DIR$/b.txt" />
         <option value="$PROJECT_DIR$/Data.txt" />
         <option value="$PROJECT_DIR$/src/main/java/demo/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/NlpDemo.java" />
       </list>
     </option>
   </component>
@@ -252,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.NlpDemo">
     <configuration default="false" name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -558,8 +567,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NlpDemo" />
+        <item index="0" class="java.lang.String" itemvalue="Application.NlpDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
         <item index="2" class="java.lang.String" itemvalue="Application.Program" />
       </list>
     </recent_temporary>
@@ -604,7 +613,9 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99405000" />
+
+    <option name="totallyTimeSpent" value="105842000" />
+
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,7 +627,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="-5" width="1853" height="1086" extended-state="6" />
+
+    <frame x="68" y="-5" width="1853" height="1086" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -626,7 +639,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6043956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6813187" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32637364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32637364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21911682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -721,7 +736,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="946">
           <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding />
+          <folding>
+            <marker date="1531996026473" expanded="false" signature="4499:4507" ph="&lt;~&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -753,7 +770,10 @@
           <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
+
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
+
           </folding>
         </state>
       </provider>
@@ -778,7 +798,10 @@
           <caret line="188" column="20" lean-forward="false" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
+
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
+
           </folding>
         </state>
       </provider>
@@ -796,7 +819,10 @@
           <caret line="158" column="58" lean-forward="true" selection-start-line="158" selection-start-column="58" selection-end-line="158" selection-end-column="58" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
+
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
+
           </folding>
         </state>
       </provider>
@@ -821,7 +847,10 @@
           <caret line="157" column="5" lean-forward="false" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
+
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
+
           </folding>
         </state>
       </provider>
@@ -860,7 +889,9 @@
           <caret line="157" column="5" lean-forward="false" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
+
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -892,8 +923,9 @@
           <caret line="157" column="5" lean-forward="true" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
-          </folding>
+
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
         </state>
       </provider>
     </entry>
@@ -917,7 +949,8 @@
           <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
           <folding>
             <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -988,24 +1021,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lemmatizator.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firstData.txt" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/net/Authenticator.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1021,13 +1037,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+
+        <state relative-caret-position="322">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
-            <marker date="1532008512156" expanded="true" signature="7835:8042" ph="{...}" />
+            <marker date="1531996026473" expanded="false" signature="4499:4507" ph="&lt;~&gt;" />
+
           </folding>
         </state>
       </provider>
@@ -1036,28 +1053,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/b.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3009">
-          <caret line="819" column="17" lean-forward="true" selection-start-line="819" selection-start-column="17" selection-end-line="819" selection-end-column="17" />
+
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data.txt">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
+    <entry file="file://$PROJECT_DIR$/b.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="47" column="46" lean-forward="true" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+
+        <state relative-caret-position="-138">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding />
+
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <element signature="method#stripDuplicatesFromFile#0;class#Utils#0" expanded="false" />
+            <element signature="method#getURLContext#0;class#Utils#0" expanded="false" />
+            <element signature="docComment;method#writeFile#1;class#Utils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/NlpDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

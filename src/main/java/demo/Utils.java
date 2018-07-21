@@ -266,4 +266,74 @@ public class Utils {
         writer.close();
 
     }
+
+    public static void getFreq2(String fileName, String newFilename) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(newFilename));
+        String line = reader.readLine();
+
+        while ((line) != null) {
+            String[] lines = line.split(";");
+
+            if ((!line.contains("мать") &&
+                    !line.contains("мягкое небо") &&
+                    !line.contains("одежда") &&
+                    !line.contains("птица") &&
+                    !line.contains("жидкий стул") &&
+                    !line.contains("клеточная стенка") &&
+                    !line.contains("животное") &&
+                    !line.contains("ребенок") &&
+                    !line.contains("свинья") &&
+                    !line.contains("собака") &&
+                    !line.contains("стол") &&
+                    !line.contains("страна") &&
+                    !line.contains("сутки") &&
+                    !line.contains("ткань") &&
+                    !line.contains("тяжелая форма") &&
+                    !line.contains("хозяин") &&
+                    !line.contains("белка") &&
+                    !line.contains("белка") &&
+                    !line.contains("белая мышь") &&
+                    !line.contains("важная роль") &&
+                    !line.contains("белка") &&
+                    !line.contains("животное") &&
+                    !line.contains("лекция") &&
+                    !line.contains("население") &&
+                    !line.contains("катаральное явление") &&
+                    !line.contains("клеточная стенка") &&
+                    !line.contains("кошка") &&
+                    !line.contains("лошадь"))) {
+                line.replaceAll("больной", "боль");
+                line.replaceAll("беременная", "беременность");
+                line.replaceAll("беременная", "беременность");
+
+                writer.write(line);
+                writer.newLine();
+            }
+            line = reader.readLine();
+        }
+
+        writer.close();
+
+    }
+
+
+/*    public static void script(ArrayList<String> relations) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter("a.txt"));
+        for (String s : relations) {
+
+            String[] lines = s.split(";");
+            String word1 = lines[0];
+            String word2 = lines[0];
+
+            double cos = model.similarity(word1, word2);
+            writer.write(word1 + ";" + word2 + ";" + cos);
+            writer.newLine();
+
+        }
+        writer.flush();
+        writer.close();
+    }*/
+
+
 }

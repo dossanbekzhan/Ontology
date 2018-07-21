@@ -22,7 +22,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
 
-        ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/Data.txt");
+        ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/Data2.txt");
 
         scrapWithOKHTTP(list);
 
@@ -35,15 +35,15 @@ public class Main {
 
         try {
 
-            //Authenticator.setDefault(new ProxyAuthenticator("WnxJCW", "YAj43X", "185.249.172.154", "8000"));
-            //Authenticator.setDefault(new ProxyAuthenticator("DsGBCp", "Rxnx98", "91.241.47.196", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("WnxJCW", "YAj43X", "185.249.172.154", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("DsGBCp", "Rxnx98", "91.241.47.196", "8000"));
 //            Authenticator.setDefault(new ProxyAuthenticator("tENEuo", "KuxbR2", "193.93.61.103", "8000"));
-//             Authenticator.setDefault(new ProxyAuthenticator("Dg0uJ1", "1DbFup", "146.185.197.20", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("Dg0uJ1", "1DbFup", "146.185.197.20", "8000"));
 //            Authenticator.setDefault(new ProxyAuthenticator("Dg0uJ1", "1DbFup", "185.225.11.127", "8000"));
 //            Authenticator.setDefault(new ProxyAuthenticator("KpKKrF", "bHnFgD", "37.139.49.33", "8000"));
 //            Authenticator.setDefault(new ProxyAuthenticator("KpKKrF", "bHnFgD", "46.161.29.181", "8000"));
 //            Authenticator.setDefault(new ProxyAuthenticator("DsGBCp", "Rxnx98", "193.93.60.184", "8000"));
-//                 Authenticator.setDefault(new ProxyAuthenticator("y1L78K", "3mqyK2", "185.128.215.204", "8000"));
+//            Authenticator.setDefault(new ProxyAuthenticator("y1L78K", "3mqyK2", "185.128.215.204", "8000"));
 
             for (String phrase : phraseList) {
 
@@ -94,16 +94,17 @@ public class Main {
                 } else {
                     System.out.println("____________next proxy______________");
                     Document document = Jsoup.parse(response.body().string());
-                    System.out.println(document);
+                    //System.out.println(document);
                     break;
                 }
 
             }
 
+        } catch (Exception e) {
+            // System.out.println(e);
             writer1.flush();
             writer1.close();
-        } catch (Exception e) {
-            System.out.println(e);
+        } finally {
             writer1.flush();
             writer1.close();
         }

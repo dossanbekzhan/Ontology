@@ -275,7 +275,7 @@ public class Utils {
         while ((line) != null) {
             String[] lines = line.split(";");
 
-            if ((!line.contains("мать") &&
+            /*if ((!line.contains("мать") &&
                     !line.contains("мягкое небо") &&
                     !line.contains("одежда") &&
                     !line.contains("птица") &&
@@ -302,14 +302,13 @@ public class Utils {
                     !line.contains("катаральное явление") &&
                     !line.contains("клеточная стенка") &&
                     !line.contains("кошка") &&
-                    !line.contains("лошадь"))) {
-                line.replaceAll("больной", "боль");
-                line.replaceAll("беременная", "беременность");
-                line.replaceAll("беременная", "беременность");
+                    !line.contains("лошадь"))) {*/
+            line = line.replaceAll("больной", "боль");
+            // line.replaceAll("беременная", "беременность");
 
-                writer.write(line);
-                writer.newLine();
-            }
+            writer.write(line);
+            writer.newLine();
+            //}
             line = reader.readLine();
         }
 
@@ -318,22 +317,87 @@ public class Utils {
     }
 
 
-/*    public static void script(ArrayList<String> relations) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter("a.txt"));
-        for (String s : relations) {
+    /*    public static void script(ArrayList<String> relations) throws IOException {
+            BufferedWriter writer = new BufferedWriter(new FileWriter("a.txt"));
+            for (String s : relations) {
 
-            String[] lines = s.split(";");
+                String[] lines = s.split(";");
+                String word1 = lines[0];
+                String word2 = lines[0];
+
+                double cos = model.similarity(word1, word2);
+                writer.write(word1 + ";" + word2 + ";" + cos);
+                writer.newLine();
+
+            }
+            writer.flush();
+            writer.close();
+        }*/
+
+    public static void change(String fileName, String newFilename) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(newFilename));
+        String line = reader.readLine();
+
+        while ((line) != null) {
+            String[] lines = line.split(";");
+
             String word1 = lines[0];
-            String word2 = lines[0];
+            String word2 = lines[1];
 
-            double cos = model.similarity(word1, word2);
-            writer.write(word1 + ";" + word2 + ";" + cos);
+            String full = word2 + "; " + word1;
+            full = full.replace(" ", "");
+            writer.write(full);
             writer.newLine();
-
+            line = reader.readLine();
         }
+
+    }
+
+    public static void aaa(String keyFile, String newFileName) throws IOException {
+        List<String> key = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new FileReader(keyFile));
+        BufferedReader reader2 = new BufferedReader(new FileReader("/media/beka/6B0065904B67B69B/beta/keyValue.txt"));
+
+        BufferedWriter writer = new BufferedWriter(new FileWriter(newFileName));
+
+        String line = reader.readLine();
+        while ((line) != null) {
+            key.add(line);
+            line = reader.readLine();
+        }
+        for (String s : key) {
+            System.out.println(s);
+        }
+
+        String line2 = reader2.readLine();
+        while ((line2) != null) {
+            String[] split = line2.split(";");
+            for (String item : key) {
+                if (item.contains(split[1])) {
+                    System.out.println(split[0] + ";" + item);
+                    writer.write(split[0] + ";" + item);
+                    writer.newLine();
+                }
+            }
+            line2 = reader2.readLine();
+        }
+
         writer.flush();
         writer.close();
-    }*/
+    }
 
+    public static List<String> readValue(String fileName) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        List<String> lists = new ArrayList<>();
+        String line = reader.readLine();
+        String[] split = line.split(";");
+        while ((line) != null) {
+            lists.add(split[1]);
+            line = reader.readLine();
+        }
+
+        return lists;
+    }
 
 }

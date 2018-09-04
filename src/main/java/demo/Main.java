@@ -17,12 +17,24 @@ import java.util.regex.Pattern;
 
 public class Main {
     private static final String GOOGLEURL = "http://www.google.com/search?q=";
-    private static ArrayList<String> proxies = new ArrayList<>();
+    private static ArrayList<Proxy> proxies = new ArrayList<>();
+    private static int count = 0;
 
     public static void main(String[] args) throws Exception {
+        // proxies.add(new Proxy("kBNBFJ", "CGvRE5", "146.185.198.97", "8000"));//1
+        //  proxies.add(new Proxy("", "", "", ""));
+        //   proxies.add(new Proxy("2UUCe6", "CuVzrt", "185.221.162.116", "9338"));//6
+        // proxies.add(new Proxy("fFNsRg", "nn93Tp", "185.148.27.248", "8000"));//2
+        // proxies.add(new Proxy("BFNv46", "bMV1HM", "185.233.200.93", "9030"));//5
+      //  proxies.add(new Proxy("2d29GP", "wc5LGQ", "5.101.85.61", "8000"));//4
+         proxies.add(new Proxy("MQPF0E", "gP9Ppm", "91.243.54.47", "8000"));//3
 
 
-        ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/Data2.txt");
+        //не рабочий прокси
+        // proxies.add(new Proxy("5aTb4h", "XqGW9x", "185.232.168.125", "9159"));
+
+
+        ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/KeyAndValue(Genitive).txt");
 
         scrapWithOKHTTP(list);
 
@@ -31,98 +43,96 @@ public class Main {
 
     public static void scrapWithOKHTTP(List<String> phraseList) throws Exception {
 
-        Writer writer1 = new FileWriter("/home/beka/IdeaProjects/Ontology/b.txt", true);
+        Writer writer1 = new FileWriter("/home/beka/IdeaProjects/Ontology/bootstrapping.txt", true);
 
         try {
 
-//            Authenticator.setDefault(new ProxyAuthenticator("WnxJCW", "YAj43X", "185.249.172.154", "8000"));
-//            Authenticator.setDefault(new ProxyAuthenticator("DsGBCp", "Rxnx98", "91.241.47.196", "8000"));
-//            Authenticator.setDefault(new ProxyAuthenticator("tENEuo", "KuxbR2", "193.93.61.103", "8000"));
-//            Authenticator.setDefault(new ProxyAuthenticator("Dg0uJ1", "1DbFup", "146.185.197.20", "8000"));
-//            Authenticator.setDefault(new ProxyAuthenticator("Dg0uJ1", "1DbFup", "185.225.11.127", "8000"));
-//            Authenticator.setDefault(new ProxyAuthenticator("KpKKrF", "bHnFgD", "37.139.49.33", "8000"));
-//            Authenticator.setDefault(new ProxyAuthenticator("KpKKrF", "bHnFgD", "46.161.29.181", "8000"));
-//            Authenticator.setDefault(new ProxyAuthenticator("DsGBCp", "Rxnx98", "193.93.60.184", "8000"));
-//            Authenticator.setDefault(new ProxyAuthenticator("y1L78K", "3mqyK2", "185.128.215.204", "8000"));
+            for (int i = 0; i < proxies.size(); i++) {
+                Authenticator.setDefault(new ProxyAuthenticator(proxies.get(i).getUsername(), proxies.get(i).getPass(), proxies.get(i).getHost(), proxies.get(i).getPort()));
 
-            for (String phrase : phraseList) {
+                for (int j = count; j < phraseList.size(); j++) {
+                    String[] tempphrase = phraseList.get(j).split(";");
 
+                    String forCheck = tempphrase[0];
+                    String object = tempphrase[1];
 
-                String tempURL = GOOGLEURL + "\"" + phrase + "\"";
+                    String tempURL = GOOGLEURL + "\"" + forCheck + "\"";
 
-                OkHttpClient client = new OkHttpClient();
-                client.setConnectTimeout(15, TimeUnit.SECONDS);
-                client.setReadTimeout(15, TimeUnit.SECONDS);
+                    OkHttpClient client = new OkHttpClient();
+                    client.setConnectTimeout(15, TimeUnit.SECONDS);
+                    client.setReadTimeout(15, TimeUnit.SECONDS);
 
-                Request request = new Request.Builder()
-                        .url(tempURL)
-                        .build();
+                    Request request = new Request.Builder()
+                            .url(tempURL)
+                            .build();
 
-                Response response = client.newCall(request).execute();
+                    Response response = client.newCall(request).execute();
 
-                System.out.println(response.message());
+                    System.out.println(response.message());
 
-                if (response.message().equals("OK")) {
-                    Document document = Jsoup.parse(response.body().string());
                     System.out.println(tempURL + " ");
+                    if (response.message().equals("OK")) {
+                        Document document = Jsoup.parse(response.body().string());
 
-                    Element divResultStats = document.select("div#resultStats").first();
 
-                    Element divNotNull = document.select("div#topstuff").select("div.e").first();
+                        Element divResultStats = document.select("div#resultStats").first();
 
-                    if (divNotNull != null) {
-                        System.out.println(divNotNull.text());
-                        continue;
+                        Element divNotNull = document.select("div#topstuff").select("div.e").first();
+
+                        if (divNotNull != null) {
+                            System.out.println(divNotNull.text());
+                            continue;
+                        }
+
+                        if (divResultStats == null) {
+                            throw new RuntimeException("Unable to find results stats.");
+                        }
+                        Integer result = toInteger(divResultStats.text());
+                        String[] split = forCheck.split("\\+");
+                        System.out.println(result);
+                        StringBuilder builder = new StringBuilder();
+                        if (result >= 1300) {
+                            builder.append(object)
+                                    .append(";")
+                                    .append(split[0])
+                                    .append(";")
+                                    .append(split[1])
+                                    .append("\n");
+                            writer1.write(builder.toString());
+                            System.out.println("\n" + builder.toString() + "  = " + result);
+                        }
+                    } else {
+                        System.out.println("____________next proxy______________");
+                        Document document = Jsoup.parse(response.body().string());
+                        //System.out.println(document);
+                        count = j;
+                        System.out.println("count :" + count + " proxy id:" + i);
+                        Thread.sleep(10000);
+                        break;
                     }
-
-                    if (divResultStats == null) {
-                        throw new RuntimeException("Unable to find results stats.");
-                    }
-                    Integer result = toInteger(divResultStats.text());
-                    String[] split = phrase.split("\\+");
-                    System.out.println(result);
-                    StringBuilder builder = new StringBuilder();
-                    if (result > 4400) {
-                        builder.append(split[0])
-                                .append(";")
-                                .append(split[1])
-                                .append("\n");
-                        writer1.write(builder.toString());
-                        System.out.println("\n" + builder.toString() + "  = " + result);
-
-                    }
-                } else {
-                    System.out.println("____________next proxy______________");
-                    Document document = Jsoup.parse(response.body().string());
-                    //System.out.println(document);
-                    break;
                 }
-
             }
-
         } catch (Exception e) {
-            // System.out.println(e);
+            System.out.println(e);
             writer1.flush();
             writer1.close();
         } finally {
-            writer1.flush();
             writer1.close();
         }
-
-
     }
 
     public static List<String> readFile(String fileName) throws IOException {
         List<String> phraseList = new ArrayList<String>();
 
-        String line;
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
-        while ((line = reader.readLine()) != null) {
-            String[] values = line.split(";");
-            if (Integer.parseInt(values[2]) == 0) {
-                String value = values[1];
-                phraseList.add(values[0] + "+" + value);
-            }
+        String line = reader.readLine();
+        while ((line) != null) {
+            String[] split = line.split(";");
+            String value = split[1];
+            String object = split[0];
+            String objectGenitive = split[2];
+            phraseList.add(value + "+" + objectGenitive + ";" + object);
+            line = reader.readLine();
         }
 
         System.out.println("Phrase list size: " + phraseList.size());

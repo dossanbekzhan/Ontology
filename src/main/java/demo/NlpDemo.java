@@ -9,18 +9,22 @@ public class NlpDemo {
     public static void main(String[] args) throws IOException {
         // Utils.replaceWord("/home/beka/Рабочий стол/BD/wiki.txt", "Л.", "легкие", "/home/beka/Рабочий стол/BD/wiki2.txt");
         // Utils.listFilesForFolder(new File("/home/beka/Рабочий стол/project/DemoTexts/"));
-        String s = Utils.readFile("/home/beka/IdeaProjects/Ontology/lemmatizator.txt");
-        s = s.replaceAll("[a-zA-Z0-9_-]", "");
+      /*  String s = Utils.readFile("/home/beka/Рабочий стол/lemma.txt");
+        //s = s.replaceAll("[a-zA-Z0-9_-]", "");
+        s = s.replaceAll("[^А-яа-я\\s+]", "");
 
-        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/beka/IdeaProjects/Ontology/lemmatizator2.txt"));
+        //String s2 = removePunct2(s);
+
+
+        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/beka/Рабочий стол/lemma2.txt"));
         writer.write(s);
         writer.flush();
         writer.close();
-
-   //     Utils.getFreq2("/home/beka/Рабочий стол/mini3.txt", "/home/beka/Рабочий стол/mini2.txt");
+*/
+        //     Utils.getFreq2("/home/beka/Рабочий стол/mini3.txt", "/home/beka/Рабочий стол/mini2.txt");
 
         // Utils.getAttrInBigClaster(Utils.getElements("/home/beka/Документы/words_clusters_k7.txt"), "/home/beka/Рабочий стол/aaa/cluster/a.txt");
-         Utils.listFilesForFolder(new File("/home/beka/Рабочий стол/BD/"));
+        //     Utils.listFilesForFolder(new File("/home/beka/Рабочий стол/BD/"));
         //  Utils.stripDuplicatesFromFile("/home/beka/Рабочий стол/mini.txt","/home/beka/Рабочий стол/mini2.txt");
 
         // Utils.getAttrInBigClaster(Utils.getElements("/home/beka/Рабочий стол/names2.txt"),"/home/beka/Рабочий стол/aaa/cluster/FirstData2.txt","/home/beka/Рабочий стол/mini.txt");
@@ -50,6 +54,15 @@ public class NlpDemo {
             String name = entry.getKey();
             Utils.writeFile(name, context);
         }*/
+
+        //Utils.getFreq2("/home/beka/Рабочий стол/mini2.txt","/home/beka/Рабочий стол/names2.txt");
+        //    Utils.change("/home/beka/Рабочий стол/project/ValueKey.txt", "/home/beka/Рабочий стол/project/ValueKey2.txt");
+
+        //Utils.aaa("/media/beka/6B0065904B67B69B/beta/value.txt", "/media/beka/6B0065904B67B69B/beta/keyValueBeta.txt");
+      //  Utils.stripDuplicatesFromFile("/media/beka/6B0065904B67B69B/beta/keyValueBeta.txt","/media/beka/6B0065904B67B69B/beta/keyValueBeta2.txt");
+
+        //Utils.count();
+
 
     }
 }

@@ -23,15 +23,11 @@ public class Main {
     public static void main(String[] args) throws Exception {
         // proxies.add(new Proxy("kBNBFJ", "CGvRE5", "146.185.198.97", "8000"));//1
         //  proxies.add(new Proxy("", "", "", ""));
-        //   proxies.add(new Proxy("2UUCe6", "CuVzrt", "185.221.162.116", "9338"));//6
         // proxies.add(new Proxy("fFNsRg", "nn93Tp", "185.148.27.248", "8000"));//2
         // proxies.add(new Proxy("BFNv46", "bMV1HM", "185.233.200.93", "9030"));//5
-      //  proxies.add(new Proxy("2d29GP", "wc5LGQ", "5.101.85.61", "8000"));//4
-         proxies.add(new Proxy("MQPF0E", "gP9Ppm", "91.243.54.47", "8000"));//3
-
-
-        //не рабочий прокси
-        // proxies.add(new Proxy("5aTb4h", "XqGW9x", "185.232.168.125", "9159"));
+        //  proxies.add(new Proxy("2d29GP", "wc5LGQ", "5.101.85.61", "8000"));//4
+        //proxies.add(new Proxy("MQPF0E", "gP9Ppm", "91.243.54.47", "8000"));//3
+        //   proxies.add(new Proxy("2UUCe6", "CuVzrt", "185.221.162.116", "9338"));//6
 
 
         ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/KeyAndValue(Genitive).txt");

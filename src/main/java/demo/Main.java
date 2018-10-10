@@ -16,35 +16,39 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
-    private static final String GOOGLEURL = "http://www.google.com/search?q=";
+    private static final String GOOGLEURL = "http://www.google.kz/search?q=";
     private static ArrayList<Proxy> proxies = new ArrayList<>();
     private static int count = 0;
 
     public static void main(String[] args) throws Exception {
-        // proxies.add(new Proxy("kBNBFJ", "CGvRE5", "146.185.198.97", "8000"));//1
-        //  proxies.add(new Proxy("", "", "", ""));
-        // proxies.add(new Proxy("fFNsRg", "nn93Tp", "185.148.27.248", "8000"));//2
-        // proxies.add(new Proxy("BFNv46", "bMV1HM", "185.233.200.93", "9030"));//5
-        //  proxies.add(new Proxy("2d29GP", "wc5LGQ", "5.101.85.61", "8000"));//4
+        proxies.add(new Proxy("6TWQKa", "0trmcR", "91.215.85.146", "8000"));//1
+        proxies.add(new Proxy("", "", "", ""));
+
+        //proxies.add(new Proxy("fFNsRg", "nn93Tp", "185.148.27.248", "8000"));//2
+        //proxies.add(new Proxy("2d29GP", "wc5LGQ", "5.101.85.61", "8000"));//4
         //proxies.add(new Proxy("MQPF0E", "gP9Ppm", "91.243.54.47", "8000"));//3
-        //   proxies.add(new Proxy("2UUCe6", "CuVzrt", "185.221.162.116", "9338"));//6
+        // proxies.add(new Proxy("2UUCe6", "CuVzrt", "185.221.162.116", "9338"));//6
 
 
-        ArrayList<String> list = (ArrayList<String>) readFile("/home/beka/IdeaProjects/Ontology/KeyAndValue(Genitive).txt");
-
+        ArrayList<String> list = (ArrayList<String>) readFile("ForCheck.txt");
         scrapWithOKHTTP(list);
+
+        //writeFile(list, "miniWithOutGenitive.txt");
 
     }
 
 
     public static void scrapWithOKHTTP(List<String> phraseList) throws Exception {
 
-        Writer writer1 = new FileWriter("/home/beka/IdeaProjects/Ontology/bootstrapping.txt", true);
+        Writer writer1 = new FileWriter("bootstrapping.txt", true);
 
         try {
 
             for (int i = 0; i < proxies.size(); i++) {
-                Authenticator.setDefault(new ProxyAuthenticator(proxies.get(i).getUsername(), proxies.get(i).getPass(), proxies.get(i).getHost(), proxies.get(i).getPort()));
+                Authenticator.setDefault(new ProxyAuthenticator(proxies.get(i).getUsername(),
+                        proxies.get(i).getPass(),
+                        proxies.get(i).getHost(),
+                        proxies.get(i).getPort()));
 
                 for (int j = count; j < phraseList.size(); j++) {
                     String[] tempphrase = phraseList.get(j).split(";");
@@ -52,14 +56,16 @@ public class Main {
                     String forCheck = tempphrase[0];
                     String object = tempphrase[1];
 
-                    String tempURL = GOOGLEURL + "\"" + forCheck + "\"";
+                    String tempURL = GOOGLEURL + "\"" + forCheck + "\"" + "&hl=RU&cr=countryRU&lr=lang_ru";
 
                     OkHttpClient client = new OkHttpClient();
+
                     client.setConnectTimeout(15, TimeUnit.SECONDS);
                     client.setReadTimeout(15, TimeUnit.SECONDS);
 
                     Request request = new Request.Builder()
                             .url(tempURL)
+                            .header("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; fr-FR) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27")
                             .build();
 
                     Response response = client.newCall(request).execute();
@@ -69,6 +75,7 @@ public class Main {
                     System.out.println(tempURL + " ");
                     if (response.message().equals("OK")) {
                         Document document = Jsoup.parse(response.body().string());
+                        Utils.writeFile("C:\\Users\\Admin\\IdeaProjects\\Ontology\\html\\" + forCheck + ".html", document.toString());
 
 
                         Element divResultStats = document.select("div#resultStats").first();
@@ -87,7 +94,7 @@ public class Main {
                         String[] split = forCheck.split("\\+");
                         System.out.println(result);
                         StringBuilder builder = new StringBuilder();
-                        if (result >= 1300) {
+                        if (result >= 1000) {
                             builder.append(object)
                                     .append(";")
                                     .append(split[0])
@@ -103,7 +110,6 @@ public class Main {
                         //System.out.println(document);
                         count = j;
                         System.out.println("count :" + count + " proxy id:" + i);
-                        Thread.sleep(10000);
                         break;
                     }
                 }
@@ -127,13 +133,28 @@ public class Main {
             String value = split[1];
             String object = split[0];
             String objectGenitive = split[2];
-            phraseList.add(value + "+" + objectGenitive + ";" + object);
+
+
+             phraseList.add(value + "+" + objectGenitive.trim() + ";" + object);
+            //adding
+            //phraseList.add(object + ";" + value);
+
             line = reader.readLine();
         }
 
         System.out.println("Phrase list size: " + phraseList.size());
 
         return phraseList;
+    }
+
+    public static void writeFile(List<String> phrase, String newFilename) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(newFilename));
+
+        for (String line : phrase) {
+            writer.write(line);
+            writer.newLine();
+        }
+        writer.close();
     }
 
 

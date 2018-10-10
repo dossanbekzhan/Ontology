@@ -7,7 +7,12 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.*;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
+
+import static java.nio.charset.StandardCharsets.ISO_8859_1;
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 
 /**
@@ -39,7 +44,6 @@ public class Utils {
         writer.close();
     }
 
-
     public static void getAttrInBigClaster(List<String> attr, String filename, String newFileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         BufferedWriter writer = new BufferedWriter(new FileWriter(newFileName, true));
@@ -57,7 +61,6 @@ public class Utils {
         writer.close();
     }
 
-
     public static List<String> getElements(String filename) throws IOException {
 
         BufferedReader reader = new BufferedReader(new FileReader(filename));
@@ -72,7 +75,6 @@ public class Utils {
         System.out.println(lines);
         return lines;
     }
-
 
     public static void writeFile(List<String> object, List<String> attr, List<String> fullCollocation, String newFilename) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(newFilename));
@@ -99,8 +101,8 @@ public class Utils {
 
         while ((line) != null) {
             String[] lines = line.split(";");
-            if (line.contains("1")) {
-                writer.write(lines[0] + "; " + lines[1]);
+            if (line.contains("0")) {
+                writer.write(lines[0] + ";" + lines[1] + ";" + lines[2]);
                 writer.newLine();
             }
             line = reader.readLine();
@@ -109,7 +111,6 @@ public class Utils {
         writer.close();
 
     }
-
 
     public static void main() throws IOException {
         List<String> keywords = new LinkedList<>();
@@ -195,78 +196,6 @@ public class Utils {
         return fullText;
     }
 
-
-    public static Map<String, String> getURLArticles(ArrayList<String> urls, String select) throws IOException {
-        Map<String, String> articles = new HashMap<>();
-
-        for (int i = 0; i < urls.size(); i++) {
-
-
-            String tempURL = urls.get(i);
-            Connection connection = Jsoup.connect(tempURL).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
-            Document document = connection.timeout(10000).get();
-
-            Elements main = document.select(select);
-
-            Elements links = main.select("a[href]");
-
-            for (Element link : links) {
-                if (!link.text().isEmpty()) {
-                    System.out.println("Name Article: " + link.text());
-                    System.out.println("Href: " + Constants.URLWIKI + link.attr("href"));
-                    articles.put(link.text(), Constants.URLWIKI + link.attr("href"));
-                }
-            }
-        }
-
-        return articles;
-    }
-
-    /**
-     * @param url    is article's url
-     * @param select is html context
-     *               <p>
-     *               div id is div#
-     *               div class is div.
-     *               <p>
-     *               for remove use method document.select(select).remove()
-     * @return Article's context
-     * @throws IOException
-     */
-    public static String getURLContext(String url, String select, String removeselect) throws IOException {
-        StringBuilder builder = new StringBuilder();
-
-        Connection connection = Jsoup.connect(url).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
-        Document document = connection.timeout(10000).get();
-
-        document.select(removeselect).remove();
-        document.select("table.infobox").remove();
-        document.select("div#toctitle").remove();
-        document.select("div.toctitle").remove();
-        document.select("div#toc").remove();
-        document.select("div.toc").remove();
-
-        Element context = document.select(select).first();
-
-        builder.append(context.text());
-
-        return builder.toString();
-    }
-
-    /**
-     * @param nameFile
-     * @param context
-     * @throws IOException
-     */
-    public static void writeFile(String nameFile, String context) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/beka/Рабочий стол/BD/" + nameFile + ".txt"));
-
-        writer.write(context);
-        writer.flush();
-        writer.close();
-
-    }
-
     public static void getFreq2(String fileName, String newFilename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
         BufferedWriter writer = new BufferedWriter(new FileWriter(newFilename));
@@ -278,30 +207,6 @@ public class Utils {
             /*if ((!line.contains("мать") &&
                     !line.contains("мягкое небо") &&
                     !line.contains("одежда") &&
-                    !line.contains("птица") &&
-                    !line.contains("жидкий стул") &&
-                    !line.contains("клеточная стенка") &&
-                    !line.contains("животное") &&
-                    !line.contains("ребенок") &&
-                    !line.contains("свинья") &&
-                    !line.contains("собака") &&
-                    !line.contains("стол") &&
-                    !line.contains("страна") &&
-                    !line.contains("сутки") &&
-                    !line.contains("ткань") &&
-                    !line.contains("тяжелая форма") &&
-                    !line.contains("хозяин") &&
-                    !line.contains("белка") &&
-                    !line.contains("белка") &&
-                    !line.contains("белая мышь") &&
-                    !line.contains("важная роль") &&
-                    !line.contains("белка") &&
-                    !line.contains("животное") &&
-                    !line.contains("лекция") &&
-                    !line.contains("население") &&
-                    !line.contains("катаральное явление") &&
-                    !line.contains("клеточная стенка") &&
-                    !line.contains("кошка") &&
                     !line.contains("лошадь"))) {*/
             line = line.replaceAll("больной", "боль");
             // line.replaceAll("беременная", "беременность");
@@ -315,24 +220,6 @@ public class Utils {
         writer.close();
 
     }
-
-
-    /*    public static void script(ArrayList<String> relations) throws IOException {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("a.txt"));
-            for (String s : relations) {
-
-                String[] lines = s.split(";");
-                String word1 = lines[0];
-                String word2 = lines[0];
-
-                double cos = model.similarity(word1, word2);
-                writer.write(word1 + ";" + word2 + ";" + cos);
-                writer.newLine();
-
-            }
-            writer.flush();
-            writer.close();
-        }*/
 
     public static void change(String fileName, String newFilename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
@@ -391,13 +278,145 @@ public class Utils {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
         List<String> lists = new ArrayList<>();
         String line = reader.readLine();
-        String[] split = line.split(";");
         while ((line) != null) {
-            lists.add(split[1]);
+            String[] split = line.split(";");
+            lists.add(split[0]);
             line = reader.readLine();
         }
 
         return lists;
+    }
+
+    public static void writeFile(List<String> fullCollocation, String newFilename) throws IOException {
+
+        BufferedWriter writer = new BufferedWriter(new FileWriter(newFilename));
+
+        for (String line : fullCollocation) {
+            if ((line.contains("десен") ||
+                    line.contains("мышц") ||
+                    line.contains("нерв") ||
+                    line.contains("клетка") ||
+                    line.contains("белок") ||
+                    line.contains("витамин") ||
+                    line.contains("грипп") ||
+                    line.contains("гайморит") ||
+                    line.contains("воспаление") ||
+                    line.contains("нехватка") ||
+                    line.contains("профилактика") ||
+                    line.contains("лечение") ||
+                    line.contains("осажнение") ||
+                    line.contains("воспаление") ||
+                    line.contains("увелечение") ||
+                    line.contains("симптом") ||
+                    line.contains("обострение") ||
+                    line.contains("гепатит") ||
+                    line.contains("мозг"))) {
+                writer.write(line);
+                writer.newLine();
+            }
+        }
+
+        writer.close();
+    }
+
+    public static List<String> read(String fileName) throws IOException {
+        List<String> phraseList = new ArrayList<String>();
+
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        String line = reader.readLine();
+        while ((line) != null) {
+            phraseList.add(line);
+            line = reader.readLine();
+        }
+        System.out.println("Phrase list size: " + phraseList.size());
+        return phraseList;
+    }
+
+
+    /**
+     * 1 method
+     * Вход принимает имя файла и контекст
+     *
+     * @param nameFile
+     * @param context
+     * @throws IOException
+     */
+    public static void writeFile(String nameFile, String context) throws IOException {
+
+        BufferedWriter writer = new BufferedWriter(new FileWriter(nameFile));
+        writer.write(context);
+        writer.flush();
+        writer.close();
+
+    }
+
+    /**
+     * @param url    is article's url
+     * @param select is html context
+     *               <p>
+     *               div id is div#
+     *               div class is div.
+     *               <p>
+     *               for remove use method document.select(select).remove()
+     * @return Article's context
+     * @throws IOException
+     */
+    public static String getURLContext(String url, String select, String removeselect) throws IOException {
+        StringBuilder builder = new StringBuilder();
+
+        Connection connection = Jsoup.connect(url).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
+        Document document = connection.timeout(10000).get();
+
+        document.select(removeselect).remove();
+        document.select("table.infobox").remove();
+        document.select("div#toctitle").remove();
+        document.select("div.toctitle").remove();
+        document.select("div#toc").remove();
+        document.select("div.toc").remove();
+
+        Element context = document.select(select).first();
+
+        builder.append(context.text());
+
+        return builder.toString();
+    }
+
+    public static String getURLContext(String url, String select) throws IOException {
+        StringBuilder builder = new StringBuilder();
+
+        Connection connection = Jsoup.connect(url).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
+        Document document = connection.timeout(10000).get();
+
+        Element context = document.select(select).first();
+
+        builder.append(context.text());
+
+        return builder.toString();
+    }
+
+    public static Map<String, String> getURLArticles(ArrayList<String> urls, String select) throws IOException {
+        Map<String, String> articles = new HashMap<>();
+
+        for (String url : urls) {
+
+            String tempURL = url;
+            Connection connection = Jsoup.connect(tempURL).userAgent("Mozilla/5.0").timeout(10000).followRedirects(true);
+            Document document = connection.timeout(10000).get();
+
+            Elements main = document.select(select);
+
+            Elements links = main.select("a[href]");
+
+            for (Element link : links) {
+                if (!link.text().isEmpty()) {
+                    System.out.println("Name Article: " + link.text());
+                    System.out.println("Href: " + Constants.URLWIKI + link.attr("href"));
+                    articles.put(link.text(), Constants.URLWIKI + link.attr("href"));
+                }
+            }
+        }
+
+        return articles;
     }
 
 }

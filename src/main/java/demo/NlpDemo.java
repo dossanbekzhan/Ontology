@@ -2,6 +2,7 @@ package demo;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -23,7 +24,25 @@ public class NlpDemo {
 */
         //     Utils.getFreq2("/home/beka/Рабочий стол/mini3.txt", "/home/beka/Рабочий стол/mini2.txt");
 
-        // Utils.getAttrInBigClaster(Utils.getElements("/home/beka/Документы/words_clusters_k7.txt"), "/home/beka/Рабочий стол/aaa/cluster/a.txt");
+
+        //Utils.stripDuplicatesFromFile("D:\\DataWithGenitive.txt", "D:\\DataWithGenitive2.txt");
+        Utils.getFreq("D:\\DataWithGenitive.txt", "D:\\ForCheck.txt");
+
+
+        /*BufferedReader reader = new BufferedReader(new FileReader("D:\\attr.txt"));
+        List<String> lines = new ArrayList<>();
+        String line = reader.readLine();
+
+        while ((line) != null) {
+            String[] split = line.split(" : ");
+            lines.add(split[0].trim());
+            line = reader.readLine();
+        }
+
+        System.out.println(lines);
+        Utils.getAttrInBigClaster(lines, "D:\\Mobile.txt", "D:\\Mobile2.txt");*/
+
+
         //     Utils.listFilesForFolder(new File("/home/beka/Рабочий стол/BD/"));
         //  Utils.stripDuplicatesFromFile("/home/beka/Рабочий стол/mini.txt","/home/beka/Рабочий стол/mini2.txt");
 
@@ -59,10 +78,52 @@ public class NlpDemo {
         //    Utils.change("/home/beka/Рабочий стол/project/ValueKey.txt", "/home/beka/Рабочий стол/project/ValueKey2.txt");
 
         //Utils.aaa("/media/beka/6B0065904B67B69B/beta/value.txt", "/media/beka/6B0065904B67B69B/beta/keyValueBeta.txt");
-      //  Utils.stripDuplicatesFromFile("/media/beka/6B0065904B67B69B/beta/keyValueBeta.txt","/media/beka/6B0065904B67B69B/beta/keyValueBeta2.txt");
+        //  Utils.stripDuplicatesFromFile("/media/beka/6B0065904B67B69B/beta/keyValueBeta.txt","/media/beka/6B0065904B67B69B/beta/keyValueBeta2.txt");
 
         //Utils.count();
 
+
+        /*HashMap<String, Integer> hm = new HashMap<>();
+        Integer am;
+        for (String i : Utils.readValue("D:\\Mobile.txt")) {
+
+
+            am = hm.get(i);
+            hm.put(i, am == null ? 1 : am + 1);
+        }
+
+        for (Object key : hm.keySet().toArray()) {
+
+            if (hm.get(key) == 1) {
+
+                hm.remove(key);
+            }
+        }
+
+        for (Map.Entry<String, Integer> entry : hm.entrySet()) {
+            String key = entry.getKey().trim();
+            System.out.println(key + ":" + entry.getValue());
+        }
+        System.out.println(hm.size());*/
+
+/*
+
+        Utils.writeFile(Utils.getElements("attr.txt"),
+                Utils.getElements("KeyAndValue.txt"),
+                "mini.txt");
+*/
+        //  Utils.listFilesForFolder(new File("C:\\Users\\Admin\\IdeaProjects\\Ontology\\data\\"));
+
+
+       /* ArrayList<String> list = (ArrayList<String>) Utils.readValue("D:\\term.txt");
+        for (String s : list
+                ) {
+            System.out.println(s);
+        }
+        Utils.getAttrInBigClaster(list, "D:\\Mobile.txt", "D:\\Mobile2.txt");*/
+
+        //Utils.stripDuplicatesFromFile("D:\\Mobile2.txt", "D:\\Mobile.txt");
+        //Utils.stripDuplicatesFromFile("D:\\term.txt", "D:\\term2.txt");
 
     }
 }

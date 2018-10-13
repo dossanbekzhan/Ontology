@@ -24,11 +24,6 @@ public class Main {
         proxies.add(new Proxy("6TWQKa", "0trmcR", "91.215.85.146", "8000"));//1
         proxies.add(new Proxy("", "", "", ""));
 
-        //proxies.add(new Proxy("fFNsRg", "nn93Tp", "185.148.27.248", "8000"));//2
-        //proxies.add(new Proxy("2d29GP", "wc5LGQ", "5.101.85.61", "8000"));//4
-        //proxies.add(new Proxy("MQPF0E", "gP9Ppm", "91.243.54.47", "8000"));//3
-        // proxies.add(new Proxy("2UUCe6", "CuVzrt", "185.221.162.116", "9338"));//6
-
 
         ArrayList<String> list = (ArrayList<String>) readFile("ForCheck.txt");
         scrapWithOKHTTP(list);
@@ -75,7 +70,7 @@ public class Main {
                     System.out.println(tempURL + " ");
                     if (response.message().equals("OK")) {
                         Document document = Jsoup.parse(response.body().string());
-                        Utils.writeFile("C:\\Users\\Admin\\IdeaProjects\\Ontology\\html\\" + forCheck + ".html", document.toString());
+                        Utils.writeFile("html\\" + forCheck + ".html", document.toString());
 
 
                         Element divResultStats = document.select("div#resultStats").first();
@@ -135,7 +130,7 @@ public class Main {
             String objectGenitive = split[2];
 
 
-             phraseList.add(value + "+" + objectGenitive.trim() + ";" + object);
+            phraseList.add(value + "+" + objectGenitive.trim() + ";" + object);
             //adding
             //phraseList.add(object + ";" + value);
 
